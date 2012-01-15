@@ -800,6 +800,12 @@ void Graphics::drawAlgorithm(void)
 			}
 			if(r > 255) r = 255; if(g > 255) g = 255; if(b > 255) b = 255;
 
+			//toxicgonzo
+			r=0;
+			g=255;
+			b=0;
+
+
 			int pixel = b + (g<<8) + (r<<16);
 			addx = fb+y*800+x;//fb+y*1280+x;
 			*addx = pixel;
